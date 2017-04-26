@@ -4,9 +4,8 @@ class MarkdownInput extends Component{
     render() {
         return (
             <div className="col-md-6">
-                <h2>Input</h2>
                 <textarea 
-                    className="form-control" 
+                    className="form-control textarea-container" 
                     id="markinput" 
                     rows="35"
                     onChange={this.props.onTextChange} 

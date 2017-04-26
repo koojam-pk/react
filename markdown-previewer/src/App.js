@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import marked from 'marked';
 import MarkdownInput from './components/markdowninput';
 import MarkdownOutput from './components/markdownoutput';
+import './App.css';
 
 class App extends Component {
     defaultText = 'Heading\n' +
@@ -36,6 +37,7 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid">
+                <h1 className="text-center display-title">Markdown Previewer</h1>
                 <MarkdownInput value={this.state.markData} onTextChange={this.onTextChange}/>
                 <MarkdownOutput value={marked(this.state.markData)}/>
             </div>
